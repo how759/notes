@@ -90,6 +90,10 @@
                             + accessor = DictionaryElementsAccessor(), accessor->Add()
                                 + existing elements are normalized to dictionary structure
                             + Similarly, there is ShouldCovertToFastElement() to check whether dictionary should convert to FixedArray
+                                + If properties with non-standard attributes or accessors were added, return false
+                                + If index > Smi::kMaxValue or array's length > Smi::kMaxValue, return false
+                                + let new_capacity = Max(index+1, array's length)
+                                + if the dictionary cannot saves more than 50% space, return true, otherwise return false
 
 
 
