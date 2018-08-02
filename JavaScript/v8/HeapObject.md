@@ -60,7 +60,7 @@
                                     + case ACCESSOR:
                                         + call SetPropertyWithAccessor()
 
-
+# Sparse Array
 
 + Case
     + var a = []; a[10000] = 0
