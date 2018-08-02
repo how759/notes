@@ -1,0 +1,1 @@
+1. console.log(object) serialize object : /src/inspector/v8-console-message.cc V8 ValueStringBuilder()
